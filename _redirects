@@ -1,0 +1,20 @@
+# Old URLs from the current site -> their new homes.
+# Keeps existing Google results and any links Kerri has shared from breaking.
+
+/index.html               /                          301
+/open.html                /open-play/                301
+/themes.html              /birthday-parties/themes/  301
+/pricing.html             /pricing/                  301
+/calendar.html            /pricing/                  301
+/payment.html             /book/                     301
+/pp1-cal.html             /book/#package_1           301
+/pp2-cal.html             /book/#package_2           301
+/pp3-cal.html             /book/#package_3           301
+/waiver.html              /waiver/                   301
+/waiver-full.html         /waiver/                   301
+/faq.html                 /faq/                      301
+/contact.html             /contact/                  301
+/blog-home.html           /                          301
+/blog-post.html           /                          301
+/portfolio-overview.html  /gallery/                  301
+/portfolio-item.html      /gallery/                  301

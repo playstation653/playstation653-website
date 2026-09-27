@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Play Station 653 -- design tokens (scale layer)
+   --------------------------------------------------------------------------
+   This file holds everything that does NOT change between themes: the spacing
+   scale, the type scale, motion, and layout widths. Color, typeface, corner
+   radius and shadow depth live in css/theme.css, which is swapped per variant.
+
+   Load order matters:  tokens.css -> theme.css -> base.css -> components.css
+   ========================================================================== */
+
+:root {
+  /* ---- spacing: a 4px base, doubling-ish so rhythm stays obvious ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+
+  /* ---- type scale: fluid, clamped so it never gets silly ---- */
+  --text-xs:   0.8125rem;
+  --text-sm:   0.9375rem;
+  --text-base: 1.0625rem;
+  --text-md:   clamp(1.125rem, 0.25vw + 1.06rem, 1.25rem);
+  --text-lg:   clamp(1.25rem, 0.5vw + 1.13rem, 1.5rem);
+  --text-xl:   clamp(1.5rem, 1vw + 1.25rem, 2rem);
+  --text-2xl:  clamp(1.875rem, 2vw + 1.4rem, 2.75rem);
+  --text-3xl:  clamp(2.25rem, 3.5vw + 1.4rem, 3.75rem);
+  --text-4xl:  clamp(2.75rem, 5vw + 1.4rem, 5rem);
+
+  --leading-tight: 1.12;
+  --leading-snug:  1.28;
+  --leading-normal: 1.6;
+  --leading-loose:  1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-widest: 0.14em;
+
+  /* ---- layout ---- */
+  --width-page: 78rem;
+  --width-wide: 90rem;
+  --width-text: 40rem;
+  --gutter: var(--space-md);
+
+  /* ---- motion ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --speed-fast: 140ms;
+  --speed: 240ms;
+  --speed-slow: 420ms;
+
+  /* ---- z-index ---- */
+  --z-base: 1;
+  --z-sticky: 50;
+  --z-header: 100;
+  --z-overlay: 200;
+
+  /* ---- focus ---- */
+  --focus-width: 3px;
+  --focus-offset: 2px;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: var(--space-lg);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --gutter: var(--space-xl);
+  }
+}

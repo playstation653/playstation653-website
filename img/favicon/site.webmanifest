@@ -1,0 +1,20 @@
+{
+  "name": "Play Station 653",
+  "short_name": "Play Station 653",
+  "icons": [
+    {
+      "src": "/img/favicon/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/favicon/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#17222E",
+  "background_color": "#FFFBF4",
+  "display": "standalone",
+  "start_url": "/"
+}

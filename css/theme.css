@@ -1,0 +1,108 @@
+/* ==========================================================================
+   THEME: venue  -- "premium family venue"
+   Published at ps3.conti.technology
+   --------------------------------------------------------------------------
+   Written for the parent holding the credit card, not the four-year-old. Warm
+   neutrals, terracotta and sage, an editorial serif, tight radii, a lot of
+   air. The photography carries the joy so the chrome doesn't have to. This is
+   the direction that tends to win on party bookings and average order value.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --theme-name: "venue";
+
+  /* ---- ink ---- */
+  --ink:        #2B2621;
+  --ink-soft:   #6A6058;
+  --ink-faint:  #9B9189;
+
+  /* ---- ground ---- */
+  --surface:         #FBF8F3;
+  --surface-2:       #F2EBE1;
+  --surface-3:       #FFFFFF;
+  --surface-sunken:  #EAE1D4;
+  --surface-inverse: #2B2621;
+  --on-inverse:      #F7F2EA;
+
+  /* ---- primary: terracotta ---- */
+  --primary:        #B15540;
+  --primary-strong: #8E402E;
+  --primary-soft:   #F4E4DE;
+  --on-primary:     #FFFFFF;
+
+  /* ---- accent: muted gold ---- */
+  --accent:        #B4913F;
+  --accent-strong: #927329;
+  --accent-soft:   #F5EEDC;
+  --on-accent:     #2B2109;
+
+  /* ---- support: sage ---- */
+  --support:      #6E7F5F;
+  --support-soft: #E8EDE2;
+  --on-support:   #FFFFFF;
+
+  /* ---- lines ---- */
+  --border:        #E3D9CB;
+  --border-strong: #C3B5A2;
+  --border-width:  1px;
+  --focus-ring:    #B15540;
+
+  /* ---- type ---- */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --weight-display: 400;
+  --weight-display-strong: 600;
+  --display-tracking: -0.015em;
+  --display-transform: none;
+  --display-leading: 1.08;
+
+  --eyebrow-tracking: var(--tracking-widest);
+  --eyebrow-transform: uppercase;
+  --eyebrow-weight: 600;
+  --eyebrow-size: var(--text-xs);
+  --eyebrow-color: var(--ink-faint);
+
+  /* ---- shape: restrained ---- */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-pill: 999px;
+  --button-radius: var(--radius-sm);
+  --card-radius: var(--radius-md);
+  --image-radius: var(--radius-sm);
+
+  /* ---- depth: barely there ---- */
+  --shadow-sm: 0 1px 2px rgba(43, 38, 33, 0.05);
+  --shadow-md: 0 1px 3px rgba(43, 38, 33, 0.05), 0 10px 24px rgba(43, 38, 33, 0.06);
+  --shadow-lg: 0 2px 6px rgba(43, 38, 33, 0.05), 0 28px 60px rgba(43, 38, 33, 0.10);
+  --shadow-raised: none;
+  --shadow-raised-hover: var(--shadow-md);
+  --lift-hover: -2px;
+
+  /* ---- decoration ---- */
+  --hero-scrim: linear-gradient(180deg, rgba(43, 38, 33, 0.50) 0%, rgba(43, 38, 33, 0.22) 45%, rgba(43, 38, 33, 0.70) 100%);
+  --band-accent: var(--surface-2);
+  --rule-display: none;
+  --ticket-notch-display: none;
+}
+
+/* Cards in this theme are defined by a hairline, not a shadow. */
+.card {
+  border: 1px solid var(--border);
+}
+
+/* Optical correction: Fraunces runs large, so pull the display sizes back a
+   touch and let the extra whitespace do the work instead. */
+.h1, h1 { font-size: clamp(2.25rem, 4.25vw + 1.2rem, 4.25rem); }
+.h2, h2 { font-size: clamp(1.75rem, 2.5vw + 1.1rem, 2.75rem); }
+
+.section {
+  padding-block: var(--space-3xl);
+}
+
+.section--tinted {
+  background: var(--surface-2);
+}

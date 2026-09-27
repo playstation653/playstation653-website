@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ps3.conti.technology/sitemap.xml
